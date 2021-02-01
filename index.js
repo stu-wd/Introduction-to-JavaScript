@@ -154,17 +154,14 @@ Use the game function below to do the following:
 */
 const possibleActions = ["rock", "paper", "scissors"];
 let computer = possibleActions[Math.floor(Math.random() * possibleActions.length)];
-const tie = "it's a tie";
-const win = "you win!";
-const lose = "you lose!";
 
 function game(user, computer){
   if (user === computer) {
-    return tie;
+    return "it's a tie";
   } else if ((user === "scissors" && computer === "paper") || (user === "paper" && computer === "rock") || (user === "rock" && computer === "scissors")) {
-    return win;
+    return "you win!";
   } else {
-    return lose;
+    return "you lose!";
   }
 }
 
@@ -255,9 +252,29 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+// function vowelCounter(str) {
+//   var count = 0;
+//   const vowels = "aeiou";
+
+//   for (let i = 0; i < str.length; i++){
+//     if ((vowels.indexOf(str[i].toLowerCase())) > -1) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+function vowelCounter(str) {
+  var count = 0;
+  const vowels = "aeiou";
+    for (let i = 0; i < str.length; i++){
+      if (vowels.includes(str[i].toLowerCase())) {
+        count++;
+      } 
+} return count;
 }
+
+vowelCounter("Alligator");
 
 
 
