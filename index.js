@@ -112,13 +112,13 @@ Use the hungryDog function and feeding requirements below to do the following:
 */  
 
 function hungryDog(age, weight) {
-  if (age >= 0 && age < 1 / 6) {
+  if (age >= 0 && age < 0.166667) {
     return "Take care of your shoes!";
-  } else if (age >= 1 / 6 && age < 1 / 3) {
+  } else if (age >= 0.16666667 && age < 0.33333) {
     return weight * 0.1;
-  } else if (age >= 1 / 3 && age < 7 / 12) {
+  } else if (age >= 0.3333 && age < 0.583333) {
     return weight * 0.05;
-  } else if (age >= 7 / 12 && age < 1) {
+  } else if (age >= 0.583333 && age < 1) {
     return weight * 0.04;
   } else if (age >= 1 && weight < 6) {
     return weight * 0.05;
@@ -126,16 +126,12 @@ function hungryDog(age, weight) {
     return weight * 0.04;
   } else if (age >= 1 && weight <= 15) {
     return weight * 0.03;
-  } else if (age >= 1 && weight > 15) {
+  } else {
     return weight * 0.02;
   }
 }
 
 console.log(hungryDog(1, 15));
-
-
-
-
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -159,8 +155,10 @@ Use the game function below to do the following:
 */
 
 function game(user, computer){
-    /*add your code here*/
+    const possibleActions = ["rock", "paper", "scissors"];
+
 }
+
   
   
 
